@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e777f6a435.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="containter">
+        <nav>
+            <img src="Portfolio Website Images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href= '#header'>Home</a></li>
+                <li><a href= '#about'>About</a></li>
+                <li><a href= '#services'>Services</a></li>
+                <li><a href= '#portfolio'>Portfolio</a></li>
+                <li><a href= '#contact'>Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full-Stack Software Engineer</p>
+            <h1>Hi, I'm <span>Lara Silverthorn</span><br>from Tulsa, Oklahoma.</h1>
+        </div>
+    </div>
+</div>
+<!-------------about----------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Portfolio Website Images/about_me.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a last-semester senior graduating summa cum laude with a B.S. in Computer 
+                    Science and minors in Mathematics and Business from Oral Roberts 
+                    University. I'm also the Vice President of the ACM-W club hosted at 
+                    the university. I have a passion for creativity combined with logic and patterns.
+                    Some of my favorite classes withing my program are Mobile Application Development,
+                    Data Structures, Design and Analysis of Algorithms, and Design of Operating Systems. 
+                    All these classes combined structurally-detailed programming, mathematics, and creativity. 
+                    In my free time, I enjoy playing piano, weight lifting and running, working on new or existing 
+                    programming assignments or projects, and getting involved in church activities. I grew up in 
+                    Minnesota, where I've played piano for 15 years, and won a Minnesota State 20-Piano Contest 
+                    five times and have had the opportunity to perform at the Minneapolis Convention Center three times.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Full-Stack Development</span><br>Designing and creating databases<br>Grammar and compiler creation<br>API integration<br>Web design</li>
+                        <li><span>Algorithmic and Structure Creation</span><br>Data structures<br>Algorithm design<br>Genomic data comparison<br>Template and superclass design<br>Namespace creation</li>
+                        <li><span>App and Web Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Fall 2025</span><br>AI Development Intern</li>
+                        <li><span>Jan 2025 - May 2025</span><br>Supercomputer Research Assistant</li>
+                        <li><span>Jan 2025 - May 2025</span><br>Genomic Data Research Team Member</li>
+                        <li><span>Jan 2025 - May 2025</span><br>Teaching Assistant</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>December 2025</span><br>B.S. Computer Science - Oral Roberts University</li>
+                        <li><span>May 2023</span><br>A.A. - Normandale Community College</li>
+                        <li><span>May 2023</span><br>Highschool Diploma</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------services-------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I create and design websites including 
+                    this fabulous portfolio website.</p>
+                <a href="#website">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>App Design</h2>
+                <p>I create apps as well!</p>
+                <a href="#android_app">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Backend Development</h2>
+                <p>I've create databases, algorithms, file systems, 
+                    mutual fund analysis tools, and more!</p>
+                <a href="#iOS_app">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------portfolio ------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work" id="android_app">
+                <img src="Portfolio Website Images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Android Contact List App</h3>
+                    <p>The app allows the user to input contact information and displays the 
+                        contact addresses on a map as well as sorts them by name.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work" id="website">
+                <img src="Portfolio Website Images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>E-Birthday Card Website</h3>
+                    <p>The website is a birthday card for my dad that has recordings I created
+                         of worship songs embedded into it for my dad to listen to when I was away at college.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work" id="iOS_app">
+                <img src="Portfolio Website Images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>iOS Task List App</h3>
+                    <p>The app allows the user to input various tasks the user needs to complete, sorting them by priority.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-------------contact-------------->
+<div id="contact">
+    <div class="containter">
+        <div class="row-contact">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> larasilverthorn@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 6513368887</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/lara.silverthorn"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/lara.croft.bright"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/lara-silverthorn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    
+    function closemenu() {
+        sidemenu.style.right = "-200px"
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzTBIwWga1WbIx4lIRge32Xo-Yb7KjxrTUJx0tFM5s20swg8JDsJNyzfsaPAgr_j0-3/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function() {
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
